@@ -1,0 +1,6 @@
+talk:
+    title: "iBGP Deceptions: More Sessions, Fewer Routes"
+    pdf: "infocom.pdf"
+    description: "My first talk at IEEE INFOCOM presenting our [paper](https://nsg.ee.ethz.ch/publications/2012-03-25-ibgp-deceptions-more-sessions-fewer-routes/) on the complexity of determining whether a BGP network is correct or not."
+    highlight: 1
+    date: 2012-03-29

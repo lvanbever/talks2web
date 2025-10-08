@@ -11,8 +11,10 @@ import os
 import shutil
 import subprocess
 import sys
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime
 from pathlib import Path
+from threading import Lock
 from typing import Dict, List, Optional
 
 import yaml
@@ -29,6 +31,7 @@ class TalkProcessor:
         self.processed_talks: List[Dict] = []
         self.skipped_talks: List[str] = []
         self.errors: List[str] = []
+        self.lock = Lock()  # Thread-safe access to shared lists
 
     def parse_metadata(self, metadata_file: Path) -> Optional[Dict]:
         """Parse YAML metadata file for a talk."""
@@ -48,7 +51,8 @@ class TalkProcessor:
 
             return talk
         except Exception as e:
-            self.errors.append(f"Error parsing {metadata_file}: {e}")
+            with self.lock:
+                self.errors.append(f"Error parsing {metadata_file}: {e}")
             return None
 
     def is_talk_processed(self, talk_handle: str) -> bool:
@@ -63,7 +67,8 @@ class TalkProcessor:
         metadata_file = talk_dir / "metadata.yml"
 
         if not metadata_file.exists():
-            self.errors.append(f"No metadata.yml found in {talk_dir}")
+            with self.lock:
+                self.errors.append(f"No metadata.yml found in {talk_dir}")
             return False
 
         # Parse metadata
@@ -73,16 +78,18 @@ class TalkProcessor:
 
         # Check if already processed
         if not self.force and self.is_talk_processed(talk_handle):
-            self.skipped_talks.append(talk_handle)
-            # Still add to processed_talks for landing page generation
-            metadata['handle'] = talk_handle
-            self.processed_talks.append(metadata)
+            with self.lock:
+                self.skipped_talks.append(talk_handle)
+                # Still add to processed_talks for landing page generation
+                metadata['handle'] = talk_handle
+                self.processed_talks.append(metadata)
             return True
 
         # Find PDF file
         pdf_file = talk_dir / metadata['pdf']
         if not pdf_file.exists():
-            self.errors.append(f"PDF file not found: {pdf_file}")
+            with self.lock:
+                self.errors.append(f"PDF file not found: {pdf_file}")
             return False
 
         # Create output directory
@@ -110,7 +117,8 @@ class TalkProcessor:
             print(result.stdout)
 
         except subprocess.CalledProcessError as e:
-            self.errors.append(f"Error processing {talk_handle}: {e.stderr}")
+            with self.lock:
+                self.errors.append(f"Error processing {talk_handle}: {e.stderr}")
             return False
 
         # Copy PDF to output directory
@@ -119,7 +127,8 @@ class TalkProcessor:
 
         # Add to processed talks
         metadata['handle'] = talk_handle
-        self.processed_talks.append(metadata)
+        with self.lock:
+            self.processed_talks.append(metadata)
 
         return True
 
@@ -137,7 +146,8 @@ class TalkProcessor:
         template_file = Path('templates/landing.html')
 
         if not template_file.exists():
-            self.errors.append(f"Template file not found: {template_file}")
+            with self.lock:
+                self.errors.append(f"Template file not found: {template_file}")
             return False
 
         # Read template
@@ -259,9 +269,20 @@ class TalkProcessor:
             print(f"No talk directories found in {self.talks_dir}")
             return
 
-        # Process each talk
-        for talk_dir in sorted(talk_dirs):
-            self.process_talk(talk_dir)
+        # Process talks in parallel with up to 8 workers
+        with ThreadPoolExecutor(max_workers=8) as executor:
+            # Submit all tasks
+            futures = {executor.submit(self.process_talk, talk_dir): talk_dir
+                      for talk_dir in sorted(talk_dirs)}
+
+            # Wait for completion and handle any exceptions
+            for future in as_completed(futures):
+                talk_dir = futures[future]
+                try:
+                    future.result()
+                except Exception as e:
+                    with self.lock:
+                        self.errors.append(f"Unexpected error processing {talk_dir}: {e}")
 
         # Generate landing page
         if self.processed_talks:

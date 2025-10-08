@@ -1,0 +1,6 @@
+talk:
+    title: "CellSDN: Taking control of cellular core networks"
+    pdf: "softcell.pdf"
+    description: "A talk I gave the [SoftCell paper](https://nsg.ee.ethz.ch/publications/2013-12-01-softcell-scalable-and-flexible-cellular-core-network-architecture/) in which we aim at bringing the concepts of SDN to cellular core networks."
+    highlight: 3
+    date: 2013-04-09

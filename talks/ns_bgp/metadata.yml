@@ -1,0 +1,6 @@
+talk:
+    title: "Customized BGP Route Selection"
+    pdf: "ns_bgp.pdf"
+    description: "A talk I gave on how to increase route and path diversity in BGP by (ab)using BGP MPLS VPNs."
+    highlight: 8
+    date: 2009-10-05

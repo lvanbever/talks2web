@@ -1,0 +1,6 @@
+talk:
+    title: "Novel Applications for a SDN-enabled Internet Exchange Point"
+    pdf: "sdx.pdf"
+    description: "A talk about interesting usages of Software-Defined eXchange Points (SDXes) I gave at the IETF 87 (in Berlin)"
+    highlight: 1
+    date: 2013-07-29

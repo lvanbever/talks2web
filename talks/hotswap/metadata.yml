@@ -1,0 +1,6 @@
+talk:
+    title: "HotSwap: Correct and Efficient Controller Upgrades for Software-Defined Networks"
+    pdf: "hotsdn.pdf"
+    description: "How I went from reconfiguring networks in my PhD thesis to upgrading SDN controllers in my postdoctoral research."
+    highlight: 7
+    date: 2013-08-16

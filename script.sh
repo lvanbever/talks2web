@@ -57,11 +57,11 @@ echo "DONE"
 
 # Step2: compress PNG images for the web
 # pngquant will compress images
-# -s 4 uses balanced compression (good quality, reasonable speed)
+# -s 1 uses best quality compression (slowest but highest quality)
 # -f forces overwriting output files if they exist (for us its same as input)
 echo -n "#2: Compressing PNG files ... "
 for f in "${dir}"/*.png; do
-    pngquant "$f" -s 4 -f -o "$f"
+    pngquant "$f" -s 1 -f -o "$f"
 done
 echo "DONE"
 
