@@ -30,6 +30,7 @@ The following tools must be installed on your system:
 - **pngquant**: Compresses PNG images for web
 - **gsed** (macOS) or **sed** (Linux): Text processing
 - **Python 3.x**: For the landing page generator
+- **just**: Command runner (recommended for easier workflow)
 - **tree** (optional): For generating directory indexes
 
 ### Python Requirements
@@ -48,7 +49,7 @@ The following tools must be installed on your system:
 ### 2. Install System Dependencies
 
 ```bash
-brew install poppler pngquant gnu-sed tree
+brew install poppler pngquant gnu-sed tree just
 ```
 
 ### 3. Set Up Python Environment
@@ -97,21 +98,28 @@ This creates an `index.html` slideshow in the same directory as the PDF.
 
 ### Batch Processing Multiple Talks
 
+The recommended way to generate talks is using the `justfile`:
+
+```bash
+# Generate all talks and landing page
+just generate
+
+# Force regenerate all talks (even if already processed)
+just force
+
+# Clean output directory
+just clean
+```
+
+**Alternative (direct Python call):**
 ```bash
 # Activate virtual environment first
 source dev/bin/activate
 
 # Process all talks and generate landing page
 ./generate_talks.py talks/ html/
-```
 
-**Options:**
-- `talks_dir`: Directory containing talk subdirectories (required)
-- `output_dir`: Output directory for generated HTML (required)
-- `--force`: Force regeneration of all talks
-
-**Example:**
-```bash
+# Force regeneration
 ./generate_talks.py talks/ html/ --force
 ```
 
