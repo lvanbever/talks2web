@@ -1,0 +1,7 @@
+talk:
+    title: "Verifying configurations was the easy part"
+    pdf: "keynote.pdf"
+    description: "A keynote talk I gave to the [ACM SIGCOMM Workshop on Formal Methods Aided Network Operation](https://conferences.sigcomm.org/sigcomm/2025/workshop/fmano/) (FMANO) and at the [ACM/IRTF Applied Networking Research Workshop](https://www.irtf.org/anrw/2025/program.html) (ANRW). In the talk, I reflect on the progress of network verification, and what is needed to make it more usable."
+    highlight: 1
+    date: 2025-09-08
+    video: "https://youtu.be/gtZMoioaKZs?t=348"

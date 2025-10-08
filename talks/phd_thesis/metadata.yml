@@ -1,0 +1,9 @@
+talk:
+    title: "Methods and Techniques for Disruption-Free Network Reconfiguration"
+    pdf: "phd_thesis.pdf"
+    description: "The presentation I gave for my PhD thesis defense all the way back
+    in 2008. (I used comics illustrations, from Tintin, in my actual
+    presentation that I had to remove, unfortunately, for the online version.)
+    You can find the text of my thesis [here](https://nsg.ethz.ch)."
+    highlight: 1
+    date: 2012-10-04

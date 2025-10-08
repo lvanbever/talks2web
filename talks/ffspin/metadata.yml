@@ -1,0 +1,6 @@
+talk:
+    title: "When network programmability meets security: The good. The bad. And the ugly."
+    pdf: "keynote.pdf"
+    description: "A keynote talk I gave at the [Workshop on Formal Foundations and Security of Programmable network INfrastructures](https://conferences.sigcomm.org/sigcomm/2022/workshop-ffspin.html) (FFSPIN), which was co-located with SIGCOMM. In there I reflect on how network programmability can: help us protect network infrastructures (the good); be the target of attacks (the bad); or, worse, enable new ones (the ugly)."
+    highlight: 1
+    date: 2022-08-22

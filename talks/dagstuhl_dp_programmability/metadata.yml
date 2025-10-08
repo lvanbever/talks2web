@@ -1,0 +1,6 @@
+talk:
+    title: "Network Control Planes. What? How? Where?"
+    pdf: "dagstuhl.pdf"
+    description: "A presentation I gave at a [Dagstuhl Seminar on Programmable Network Data Planes](Programmable Network Data Planes). In it I talk about control planes, their functions, and where these should be running."
+    highlight: 1
+    date: 2019-04-03

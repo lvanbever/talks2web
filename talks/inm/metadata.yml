@@ -1,0 +1,6 @@
+talk:
+    title: "Towards Validated Network Configurations with NCGuard."
+    pdf: "ncguard.pdf"
+    description: "My first real presentation that I gave at the Internet Network Management Workshop (co-located with INFOCOM) in 2008. I presented the results of my [master thesis](https://ieeexplore.ieee.org/document/4660329). Not my greatest talk, for sure, but one has to start somewhere."
+    highlight: 1
+    date: 2008-10-19

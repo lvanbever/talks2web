@@ -1,0 +1,6 @@
+talk:
+    title: "Machine Learning for Networking. What? With what? For what?"
+    pdf: "gns_slides.pdf"
+    description: "I gave this talk in which I reflect on several aspects of ML applied to networking at the Google Networking Summit. I talk about the potential of [transformer-based models](https://nsg.ee.ethz.ch/publications/2022-11-14-a-new-hope-for-network-model-generalization-20-500-11850-577569/) and how to train them based on network data; [where to get this data from](https://nsg.ee.ethz.ch/publications/2022-11-14-generating-representative-live-network-traffic-out-of-millions-of-code-repositories-20-500-11850-589729/); and [what to do with it](https://nsg.ee.ethz.ch/blog/2022-12-05_bgp_chatgpt/)."
+    highlight: 1
+    date: 2023-10-18

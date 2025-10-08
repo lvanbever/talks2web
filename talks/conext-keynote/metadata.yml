@@ -1,0 +1,6 @@
+talk:
+    title: "The three tales of (correct) network operations"
+    pdf: "keynote.pdf"
+    description: "I won the [ACM SIGCOMM Rising Star award](https://www.sigcomm.org/awards/sigcomm-rising-star-award-winners) in 2021 and, as a result, was invited to give the keynote at the [ACM CoNEXT](https://conferences2.sigcomm.org/co-next/2021/#!/home) conference. In it, I highlight some of our key results regarding configuration synthesis; configuration verification; and reconfiguration techniques."
+    highlight: 1
+    date: 2021-12-08

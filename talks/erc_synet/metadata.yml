@@ -1,0 +1,6 @@
+talk:
+    title: "From Network Verification to Synthesis"
+    pdf: "SyNET.pdf"
+    description: "The presentation I gave during my interview for getting my [ERC Starting Grant](https://erc.europa.eu/apply-grant/starting-grant) on configuration synthesis."
+    highlight: 1
+    date: 2019-06-06

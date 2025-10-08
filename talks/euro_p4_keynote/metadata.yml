@@ -1,0 +1,6 @@
+talk:
+    title: "Programmable, Hardware-based Routing and Scheduling"
+    pdf: "keynote.pdf"
+    description: "A keynote talk I gave to the Euro P4 workshop in which I talk about how data-plane programmability can help solving routing and scheduling problems. In it I talk about our works on how to speed up [failure detection](https://nsg.ee.ethz.ch/publications/2019-01-01-blink-fast-connectivity-recovery-entirely-in-the-data-plane-20-500-11850-355899/), [routing computation](https://nsg.ee.ethz.ch/publications/2018-11-15-hardware-accelerated-network-control-planes-20-500-11850-309545/), alongside with how to [enable programmable scheduling on existing hardware targets](https://nsg.ee.ethz.ch/publications/2020-01-01-sp-pifo-approximating-push-in-first-out-behaviors-using-strict-priority-queues-20-500-11850-446995/)."
+    highlight: 1
+    date: 2020-12-01

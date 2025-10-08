@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>presentation</title>
+
+    <!-- Reveal.js core styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/theme/white.css" id="theme">
+
+    <style>
+        .reveal section > img {
+          outline: 1px solid rgba(0, 0, 0, 0.15); /* looks like a border */
+        }
+    </style>
+
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+      </div>
+    </div>
+
+    <!-- Reveal.js core script -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.js"></script>
+
+    <!-- Optional plugins -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/zoom/zoom.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/notes/notes.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/search/search.js"></script>
+
+    <script>
+      Reveal.initialize({
+        hash: true,               // update URL on slide change
+        hashOneBasedIndex: true,  // use 1-based indexing in URL hash
+        controls: true,           // navigation arrows
+        help: true,
+        progress: true,           // progress bar
+        slideNumber: true,       // show current/total slide numbers
+        transition: 'none',       // no transition between slides
+        navigationMode: 'linear', // strictly left-to-right navigation
+        overview: true,           // enable overview mode (Esc or 'o')
+        touch: true,              // enable touch navigation (swipe and tap)
+      });
+    </script>
+  </body>
+</html>

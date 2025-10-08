@@ -1,0 +1,33 @@
+# Generated output
+html/
+
+# Virtual environments
+dev/
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# System files
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+
+# Excluded directories
+example/
+revealjs/
+pdfs/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
