@@ -1,6 +1,7 @@
 # Generate talk slideshows and landing page
 generate:
     dev/bin/python generate_talks.py talks/ html/
+    open html/index.html
 
 # Force regenerate all talks
 force:
