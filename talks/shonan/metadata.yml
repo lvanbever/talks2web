@@ -1,0 +1,6 @@
+talk:
+    title: "Programming networks: Not your standard API"
+    pdf: "shonan.pdf"
+    description: "A restrospective talk I gave covering our goal of building efficient control loops fot networks running distributed routing protocols."
+    highlight: 25
+    date: 2018-02-26

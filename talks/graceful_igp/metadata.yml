@@ -1,0 +1,6 @@
+talk:
+    title: "When the cure is worse than the disease: The impact of graceful IGP operations on BGP"
+    pdf: "infocom.pdf"
+    description: "My second talk at INFOCOM in which I talk about the importance of considering the entire set of protocols whenever one reconfigures a network. Check the [paper](https://nsg.ee.ethz.ch/publications/2013-04-14-when-the-cure-is-worse-than-the-disease-the-impact-of-graceful-igp-operations-on-bgp/) for more details."
+    highlight: 6
+    date: 2013-04-18

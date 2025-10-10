@@ -1,0 +1,6 @@
+talk:
+    title: "Hijacking Bitcoin: Routing Attacks on Cryptocurrencies"
+    pdf: "suri.pdf"
+    description: "A talk I gave on our most-impactful [work](https://nsg.ee.ethz.ch/publications/2017-06-26-hijacking-bitcoin-routing-attacks-on-cryptocurrencies-20-500-11850-192153/) to date (at least, when it comes to [citation counts](https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=2&cites=12315199327970092363&as_sdt=5)). In it I analyze the impact of routing attacks on cryptocurrencies like Bitcoin"
+    highlight: 1
+    date: 2017-06-20

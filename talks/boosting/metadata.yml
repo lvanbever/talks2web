@@ -1,0 +1,6 @@
+talk:
+    title: "Boosting existing networks with SDN"
+    pdf: "boosting.pdf"
+    description: "A talk about how to turn existing, traditional networks into Software-Defined ones by taking control over their inputs ([Fibbing](https://nsg.ee.ethz.ch/publications/2015-01-01-central-control-over-distributed-routing-20-500-11850-103895/)) and by combining routers with SDN switches ([Supercharged](https://nsg.ee.ethz.ch/publications/2015-01-01-supercharge-me-boost-router-convergence-with-sdn-20-500-11850-106617/))."
+    highlight: 24
+    date: 2015-05-28

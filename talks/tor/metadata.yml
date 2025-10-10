@@ -1,0 +1,6 @@
+talk:
+    title: "Anonymity on Quicksand: Using BGP to compromise Tor"
+    pdf: "hotnets.pdf"
+    description: "My first HotNets talk! In it I discuss the security impact that BGP routing has over Tor. This work ultimately led to the [RAPTOR paper](https://nsg.ee.ethz.ch/publications/2015-01-01-raptor-routing-attacks-on-privacy-in-tor-20-500-11850-103894/) published at Usenix Security and then, later, to [our study of the impact of BGP routing on cryptocurrency](https://nsg.ee.ethz.ch/publications/2017-06-26-hijacking-bitcoin-routing-attacks-on-cryptocurrencies-20-500-11850-192153/)."
+    highlight: 1
+    date: 2014-10-28

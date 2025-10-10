@@ -1,6 +1,6 @@
 talk:
     title: "Network monitoring in the age of deep network programmability"
     pdf: "keynote.pdf"
-    description: "The keynote I gave to [TMA 2019](https://tma.ifip.org/2019/main-conference/). In it I talk about our works on [fast convergence](https://nsg.ee.ethz.ch/publications/2019-01-01-blink-fast-connectivity-recovery-entirely-in-the-data-plane-20-500-11850-355899/), [network reasonning](https://nsg.ee.ethz.ch/publications/2018-01-01-net2text-query-guided-summarization-of-network-forwarding-behaviors-20-500-11850-350005/), and [network monitoring](https://nsg.ee.ethz.ch/publications/2018-01-01-stroboscope-declarative-network-monitoring-on-a-budget-20-500-11850-350009/)."
+    description: "The keynote I gave to [TMA 2019](https://tma.ifip.org/2019/main-conference/). In it I talk about our works on [fast convergence](https://nsg.ee.ethz.ch/publications/2019-01-01-blink-fast-connectivity-recovery-entirely-in-the-data-plane-20-500-11850-355899/), [network reasoning](https://nsg.ee.ethz.ch/publications/2018-01-01-net2text-query-guided-summarization-of-network-forwarding-behaviors-20-500-11850-350005/), and [network monitoring](https://nsg.ee.ethz.ch/publications/2018-01-01-stroboscope-declarative-network-monitoring-on-a-budget-20-500-11850-350009/)."
     highlight: 45
     date: 2019-06-19

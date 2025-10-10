@@ -49,12 +49,16 @@ h2 {
      font-size: 2rem;
 }
 
-p, ol, ul, blockquote, .references { 
+p, ol, ul, blockquote, .references {
     font-size: 1.4rem;
     line-height: 2.4rem;
     margin-top: 2rem;
     padding-right: 0;
     vertical-align: baseline;
+}
+
+strong, b {
+    font-weight: bold;
 }
 
 blockquote p { font-style:italic; }

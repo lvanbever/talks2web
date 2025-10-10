@@ -1,6 +1,6 @@
 talk:
     title: "On integrating Software-Defined Networking within existing routing systems"
     pdf: "sdn_integration.pdf"
-    description: "A talk I gave during my postdoc in which I present the ideas that ultimately led to the [Fibbing](https://nsg.ee.ethz.ch/publications/2015-01-01-central-control-over-distributed-routing-20-500-11850-103895/) paper (SIGCOMM'15, best paper) and the [SDX](https://nsg.ee.ethz.ch/publications/2014-08-17-sdx-a-software-defined-internet-exchange/) paper (SIGCOMM '14')."
+    description: "A talk I gave during my postdoc in which I present the ideas that ultimately led to the [Fibbing](https://nsg.ee.ethz.ch/publications/2015-01-01-central-control-over-distributed-routing-20-500-11850-103895/) paper and the [SDX](https://nsg.ee.ethz.ch/publications/2014-08-17-sdx-a-software-defined-internet-exchange/) paper."
     highlight: 11
     date: 2013-11-15

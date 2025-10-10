@@ -1,0 +1,6 @@
+talk:
+    title: "Predictive Fast Reroute upon Remote BGP Disruptions"
+    pdf: "swift.pdf"
+    description: "A presentation I gave on [SWIFT](https://nsg.ee.ethz.ch/publications/2017-01-01-swift-predictive-fast-reroute-20-500-11850-192423/), a system to speed up convergence times upon remote BGP failures. Ultimately, SWIFT got subsummed by [Blink](https://nsg.ee.ethz.ch/publications/2019-01-01-blink-fast-connectivity-recovery-entirely-in-the-data-plane-20-500-11850-355899/), another of our systems in which we leveraged faster-to-acquire data-plane signals rather than control-plane-based signals."
+    highlight: 1
+    date: 2016-12-05
