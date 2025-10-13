@@ -13,5 +13,5 @@ clean:
 
 # Deploy to production server
 deploy:
-    rsync -avz --delete --exclude='.DS_Store' html/ vlaurent@ee-tik-vm047.ethz.ch:/local/home/web-talks-vanbever/public_html/
-    ssh vlaurent@ee-tik-vm047.ethz.ch "sudo chown -R web-talks-vanbever:web-talks-vanbever /local/home/web-talks-vanbever/public_html/"
+    rsync -avz --delete --exclude='.DS_Store' --no-perms --no-times html/ vlaurent@ee-tik-vm047.ethz.ch:/local/home/web-talks-vanbever/public_html/
+    ssh -t vlaurent@ee-tik-vm047.ethz.ch "sudo chown -R web-talks-vanbever:web-talks-vanbever /local/home/web-talks-vanbever/public_html/"

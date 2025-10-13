@@ -71,7 +71,11 @@ ul, ol, {
 
 ul { list-style-type: circle; }
 
-li { padding: 0.5rem 0; }
+li {
+    padding: 0.5rem 0;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+}
 
 figure { 
     padding: 0;
@@ -307,9 +311,12 @@ label.margin-toggle:not(.sidenote-number) { display: none; }
     }
 
     p, footer, #talks-by-year ol li p.talk-desc { width: 100%; }
-    ol, ul, blockquote { width: 95%; }
+    ul { width: 100%; }
+    #frontpage ul { width: 95%; }
+    ol, blockquote { width: 95%; }
     pre.code { width: 97%; }
     figure { max-width: 90%; }
+    #talks-by-year figure { max-width: 100%; }
     figcaption, figure.fullwidth figcaption { 
         display: block;
         margin-right: 0%;
@@ -596,8 +603,11 @@ a:hover {
   .booklink {
     font-size:1.65rem;
   }
-  #frontpage li {
+  #frontpage ol li {
     padding-top:0px;
     font-size:1.65rem;
+  }
+  #frontpage ul {
+    width: 95%;
   }
 }
